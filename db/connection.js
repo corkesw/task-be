@@ -2,6 +2,10 @@ const { Pool } = require('pg')
 
 const ENV = process.env.NODE_ENV || 'development';
 
+console.log(ENV)
+
+console.log(process.env)
+
 const config = 
     ENV === 'production'
         ? {
